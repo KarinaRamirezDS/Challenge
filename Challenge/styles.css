@@ -1,0 +1,173 @@
+body {
+    background-color: #cdd3ee;
+}
+.muneco{
+    width: 15%;
+    height: 25%;
+}
+.logo{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 120px;
+    height: 3.5rem;
+}
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-content{
+    margin-top: 5%;
+    margin-left: 240px;
+    font-size: 28pt;
+    width: 500px;  
+    height: 3.5rem;
+    box-sizing: border-box;
+    display: inline-block;
+}
+textarea {
+    width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #ddd;
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco con transparencia */
+    color: #333;
+    font-size: 16px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna para visibilidad */
+    resize: vertical; /* Permite cambiar el tamaño verticalmente */
+}
+
+.text-section{
+    margin-top: 20%;
+    margin-left: 220px;
+    width: 20rem;
+    height: 3.5rem;
+}
+
+.button-group {
+    display: flex;
+    margin-left: 10%;
+}
+
+.btn-copy {
+    width: 80%;
+    background-color: #ffffff;
+    border: none;
+    color: #0A3871;
+    font-size: 16pt;
+    margin: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #0A3871;
+}
+/* Estilo de cada botón */
+.btn-enc {
+    background-color: #0A3871;
+    border: none;
+    color: white;
+    font-size: 16pt;
+    padding: 24px 160px;
+    margin: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-decenc {
+    background-color: #D8DFE8;
+    border: none;
+    color:  #0A3871;
+    font-size: 16pt;
+    padding: 24px 160px;
+    margin: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.btn-enc:hover {
+    background-color: #0056b3;
+}
+.btn-enc:active {
+    transform: scale(0.98);
+}
+.btn-decenc:hover {
+    background-color: #71776e;
+}
+.btn-decenc:active {
+    transform: scale(0.98);
+}
+.btn-copy:hover {
+    background-color: #71776e;
+}
+.btn-copy:active {
+    transform: scale(0.98);
+}
+/*Fin  Estilo de cada botón */
+
+.mensajeCopiar {
+    position: absolute;
+    top: 40px;
+    left: 70%; 
+    width: 25%;
+    height: 60%;
+    border-radius: 50px;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensajeCopiar img{
+    max-width: 100%;
+    height: auto;
+}
+.mensajeCopiar span{
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: auto;
+    }
+
+    .text-content {
+        font-size: 20pt;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+    }
+
+    .text-section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-group {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .btn-enc,
+    .btn-decenc {
+        padding: 16px 40px;
+        margin: 12px auto;
+    }
+
+    .mensajeCopiar {
+        position: initial;
+        width: 90%;
+        padding: 10px;
+    }
+}
